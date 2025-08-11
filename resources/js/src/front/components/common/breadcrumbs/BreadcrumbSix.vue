@@ -2,13 +2,12 @@
 
 <script setup>
 
-import shape_1 from "~/assets/img/breadcrumb/breadcrumb-shape-1.png";
-import shape_2 from "~/assets/img/breadcrumb/breadcrumb-shape-2.png";
-
-import img_1 from "~/assets/img/career/image-1.png";
-import img_2 from "~/assets/img/career/image-2.png";
-import img_3 from "~/assets/img/career/image-3.png";
-import img_4 from "~/assets/img/career/image-4.png";
+import shape_1 from "../assets/img/breadcrumb/breadcrumb-shape-1.png";
+import shape_2 from "../../assets/img/breadcrumb/breadcrumb-shape-2.png";
+import img_1 from "../../assets/img/career/image-1.png";
+import img_2 from "../../assets/img/career/image-2.png";
+import img_3 from "../../assets/img/career/image-3.png";
+import img_4 from "../../assets/img/career/image-4.png";
 
 
 </script>

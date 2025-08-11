@@ -13,6 +13,16 @@ const routes: RouteRecordRaw[] = [
         name: 'home',
         component: () => import('../front/pages/index.vue'),
       },
+      {
+        path: 'career', // This becomes '/career'
+        name: 'career',
+        component: () => import('../front/pages/career.vue'),
+      },
+       {
+        path: 'register', // This becomes '/career'
+        name: 'register',
+        component: () => import('../front/pages/register.vue'),
+      },
       // You can add more front routes here
     ],
   },

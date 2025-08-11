@@ -1,8 +1,8 @@
 
 <script setup>
 
-import bg_shape from "~/assets/img/platform/p-bg.png";
-import platform_img from "~/assets/img/payment/platform-1.png";
+import bg_shape from "../../assets/img/platform/p-bg.png";
+import platform_img from "../../assets/img/payment/platform-1.png";
 
 const platform_content = {
   sub_title: "What we offer",

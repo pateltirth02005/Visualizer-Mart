@@ -16,7 +16,10 @@
 </template>
 
 <script setup>
-const mouse = useBigMouse();
+import { ref, onMounted } from 'vue';
+
+const mouse = ref(false); // ← FIXED HERE
+
 const eRef = ref(null);
 const tRef = ref(null);
 const nRef = ref(0);
@@ -25,23 +28,22 @@ const oRef = ref(false);
 
 onMounted(() => {
   const handleMouseMove = (s) => {
-      if (!oRef.value) {
-        if (tRef.value) {
-          tRef.value.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
-        }
+    if (!oRef.value) {
+      if (tRef.value) {
+        tRef.value.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
       }
-      if (eRef.value) {
-        eRef.value.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
-      }
-      nRef.value = s.clientY;
-      iRef.value = s.clientX;
-    };
+    }
+    if (eRef.value) {
+      eRef.value.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
+    }
+    nRef.value = s.clientY;
+    iRef.value = s.clientX;
+  };
 
-    window.addEventListener("mousemove", handleMouseMove);
+  window.addEventListener('mousemove', handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-    
+  return () => {
+    window.removeEventListener('mousemove', handleMouseMove);
+  };
 });
 </script>

@@ -1,8 +1,8 @@
 
 <script setup>
-import shape_img_1 from "~/assets/img/footer/footer-inner-1.png";
-import shape_img_2 from "~/assets/img/footer/footer-inner-2.png";
-import footer_logo from "~/assets/img/logo/logo-black.png";
+import shape_img_1 from "../../assets/img/footer/footer-inner-1.png";
+import shape_img_2 from "../../assets/img/footer/footer-inner-2.png";
+import footer_logo from "../../assets/img/logo/logo-black.png";
 
 
 const footer_content = {

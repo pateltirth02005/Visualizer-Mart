@@ -1,14 +1,15 @@
 
 <script setup>
-import bg_img from "~/assets/img/project/project-brdcrmb-bg.jpg";
+import { onMounted } from 'vue';
+import bg_img from "../../../assets/img/project/project-brdcrmb-bg.jpg";
 
 // spahe import here 
-import shape_1 from "~/assets/img/breadcrumb/breadcrumb-shape-2-2.png";
-import shape_2 from "~/assets/img/breadcrumb/breadcrumb-sub-2.png";
-import shape_3 from "~/assets/img/breadcrumb/breadcrumb-sub-3.png";
+import shape_1 from "../../../assets/img/breadcrumb/breadcrumb-shape-2-2.png";
+import shape_2 from "../../../assets/img/breadcrumb/breadcrumb-sub-2.png";
+import shape_3 from "../../../assets/img/breadcrumb/breadcrumb-sub-3.png";
 
 onMounted(() => {
-  useCharAnimation();
+  // useCharAnimation();
 })
 
  

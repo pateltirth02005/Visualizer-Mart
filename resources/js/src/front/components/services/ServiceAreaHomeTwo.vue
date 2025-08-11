@@ -2,11 +2,11 @@
 <script setup>
 
 // service img import 
-import service_img_1 from "~/assets/img/service/sv-icon-2-1.png"
-import service_img_2 from "~/assets/img/service/sv-icon-2-2.png"
-import service_img_3 from "~/assets/img/service/sv-icon-2-3.png"
-import service_img_4 from "~/assets/img/service/sv-icon-2-4.png"
-import bg_img from "~/assets/img/service/sv-bg-2-1.jpg"
+import service_img_1 from "../../assets/img/service/sv-icon-2-1.png"
+import service_img_2 from "../../assets/img/service/sv-icon-2-2.png"
+import service_img_3 from "../../assets/img/service/sv-icon-2-3.png"
+import service_img_4 from "../../assets/img/service/sv-icon-2-4.png"
+import bg_img from "../../assets/img/service/sv-bg-2-1.jpg"
 
 const service_content = {
   title: "We provide the <br /> best service for you",
@@ -64,23 +64,6 @@ const service_content = {
     },
   ],
 
-  free_tools_title: "More free tools than you can handle",
-
-  free_tools: [
-    "Invoicing",
-    "Online Checkout",
-    "Point-of-Sale",
-    "Online Food Ordering",
-    "ICard Vault",
-    "Customer Portal",
-    "Inventory",
-    "Virtual Terminal",
-    "Recurring Plans",
-    "Payment Links",
-    "SMS Payments",
-    "QR Codes",
-  ]
-
 }
 const { title, des, users_data, service_data, free_tools_title, free_tools } = service_content
 
@@ -95,7 +78,7 @@ const { title, des, users_data, service_data, free_tools_title, free_tools } = s
   <!-- tp-service-area-end -->
   <div class="tp-service-2__area p-relative pt-70 pb-160">
     <div class="tp-service-2__shape">
-      <img src="~/assets/img/service/sv-bg-2-1.jpg" alt="image-here">
+      <img src="../../assets/img/service/sv-bg-2-1.jpg" alt="image-here">
     </div>
     <div class="container z-index-5">
       <div class="row align-items-center mb-50">
@@ -153,22 +136,7 @@ const { title, des, users_data, service_data, free_tools_title, free_tools } = s
         </div>
 
       </div>
-      <div class="row justify-content-center">
-        <div class="col-xl-10 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-          <div class="tp-service-2__bottom-wrapper p-relative mt-110">
-            <div class="tp-service-2__feature-item">
-              <h4 class="tp-service-2__feature-title">{{ free_tools_title }}</h4>
-              <div class="tp-service-2__feature-box d-flex justify-content-between">
-                <div class="tp-service-2__feature-list">
-                  <ul>
-                    <li v-for="(item, i) in free_tools" :key="i">{{ item }}</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   </div>
   <!-- tp-service-area-end -->

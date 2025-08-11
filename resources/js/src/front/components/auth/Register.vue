@@ -1,7 +1,8 @@
 
 
 <script setup>
- import bg_img from "~/assets/img/login/login-bg-shape.png"; 
+import {ref,onMounted} from 'vue';
+ import bg_img from "../../assets/img/login/login-bg-shape.png"; 
  
 
  const passwordType = ref('password'); 
@@ -10,7 +11,7 @@
 };
  
 onMounted(() => {
-  useCharAnimation();
+  // useCharAnimation();
 })
 
 </script>
@@ -22,7 +23,7 @@ onMounted(() => {
   <div class="signin-banner-area signin-banner-main-wrap d-flex align-items-center">
     <div class="signin-banner-left-box signin-banner-bg p-relative" :style="`background-image: url(${bg_img})`">
       <div class="signin-banner-bottom-shape">
-        <img src="~/assets/img/login/login-shape-1.png" alt="image-here">
+        <img src="../../assets/img/login/login-shape-1.png" alt="image-here">
       </div>
       <div class="signin-banner-left-wrap">
         <div class="signin-banner-title-box mb-100">
@@ -30,16 +31,16 @@ onMounted(() => {
         </div>
         <div class="signin-banner-img-box position-relative">
           <div class="signin-banner-img signin-img-1 d-none d-md-block z-index-3">
-            <img src="~/assets/img/login/login-2.png" alt="image-here">
+            <img src="../../assets/img/login/login-2.png" alt="image-here">
           </div>
           <div class="signin-banner-img signin-img-2 d-none d-md-block">
-            <img src="~/assets/img/login/login-1.png" alt="image-here">
+            <img src="../../assets/img/login/login-1.png" alt="image-here">
           </div>
           <div class="signin-banner-img signin-img-3 d-none d-md-block z-index-5">
-            <img src="~/assets/img/login/login-3.png" alt="image-here">
+            <img src="../../assets/img/login/login-3.png" alt="image-here">
           </div>
           <div class="signin-banner-img signin-img-4 d-none d-sm-block">
-            <img src="~/assets/img/login/login-4.png" alt="image-here">
+            <img src="../../assets/img/login/login-4.png" alt="image-here">
           </div>
         </div>
       </div>

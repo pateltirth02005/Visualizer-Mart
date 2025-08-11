@@ -1,7 +1,7 @@
 
 <script setup>
 import Navbar from './Navbar.vue';
-
+import { onMounted,ref,onUnmounted} from 'vue';
 // menu sticky 
 const isSticky = ref(false);
 const handleSticky = () => {
@@ -44,10 +44,10 @@ const toggleMenu = () => {
           <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="header-bottom__logo">
 
-              <router-link to="/" v-if="style_2  === true"><img src="~/assets/img/logo/logo-black.png" alt="image-here"></router-link>
+              <router-link to="/" v-if="style_2  === true"><img src="../../assets/img/logo/logo-black.png" alt="image-here"></router-link>
 
-              <router-link v-if="style_2  === false" class="white-logo" to="/"><img src="~/assets/img/logo/logo-white.png" alt="image-here"></router-link>
-              <router-link v-if="style_2  === false" class="black-logo" to="/"><img src="~/assets/img/logo/logo-black.png" alt="image-here"></router-link>
+              <router-link v-if="style_2  === false" class="white-logo" to="/"><img src="../../assets/img/logo/logo-white.png" alt="image-here"></router-link>
+              <router-link v-if="style_2  === false" class="black-logo" to="/"><img src="../../assets/img/logo/logo-black.png" alt="image-here"></router-link>
             </div>
           </div>
           <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">

@@ -1,6 +1,7 @@
 <script setup>
+import Offcanvus from '../../components/common/Offcanvus.vue';
 import Navbar from './Navbar.vue';
-
+import { ref } from 'vue';
 const openMenu = ref(false)
 const toggleMenu = () => {
   openMenu.value = !openMenu.value  
@@ -17,7 +18,7 @@ const toggleMenu = () => {
         <div class="row align-items-center">
           <div class="col-6">
             <div class="header-signin-logo">
-              <router-link to="/"><img src="~/assets/img/logo/logo-white.png" alt="image-here"></router-link>
+              <router-link to="/"><img src="../../assets/img/logo/logo-white.png" alt="image-here"></router-link>
             </div>
           </div>
           <div class="col-6">
@@ -39,7 +40,7 @@ const toggleMenu = () => {
         <div class="row g-0 align-items-center">
           <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
             <div class="header-bottom__logo">
-              <router-link to="/"><img src="~/assets/img/logo/logo-white.png" alt="image-here"></router-link>
+              <router-link to="/"><img src="../../assets/img/logo/logo-white.png" alt="image-here"></router-link>
             </div>
           </div>
           <div class="col-xxl-7 col-xl-7 col-lg-7 d-none d-lg-block">
@@ -67,5 +68,5 @@ const toggleMenu = () => {
     </div>
     <!-- tp-header-area-end -->
   </header>
-  <CommonOffcanvus :toggleMenu="toggleMenu" :openMenu="openMenu" /> 
+  <Offcanvus :toggleMenu="toggleMenu" :openMenu="openMenu" /> 
 </template>
